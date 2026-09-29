@@ -1,0 +1,40 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "minEngineVersion": "1.0.2",
+  "updatedAt": "2026-09-29T11:51:00Z",
+  "modules": {
+    "sale": {
+      "id": 89620,
+      "exports": {
+        "checkGoodSale": "fR",
+        "queryCatalog": "bt"
+      }
+    },
+    "orders": {
+      "id": 43285,
+      "exports": {
+        "reprice": "_v",
+        "submitOrder": "Ar"
+      }
+    },
+    "request": {
+      "id": 14341,
+      "exportKey": "Z"
+    }
+  },
+  "endpoints": {
+    "event": "/api/pro/event",
+    "project": "/api/pro/project",
+    "waitingRoom": "/api/waitingRoom"
+  },
+  "timeouts": {
+    "catalogMs": 5000,
+    "repriceMs": 5000,
+    "submitMs": 10000
+  },
+  "waitingRoom": {
+    "pollMinIntervalMs": 2000,
+    "autoRedirect": true
+  }
+}
